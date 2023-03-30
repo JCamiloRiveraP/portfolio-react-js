@@ -1,0 +1,64 @@
+.scrollup{
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    background-color: none;
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    z-index: 10000;
+    transition: .4s;
+    border-radius: 10rem;
+    border: 1px solid transparent;
+}
+
+
+.scrollup-icon{
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.scrollup-icon:hover{
+    translate:(0.25rem);
+}
+
+.scrollup:hover{
+    transition: .3s;
+    border-radius: 10rem;
+    border: 1px solid transparent;
+}
+
+
+
+/* MOSTRAR SCROLL */
+.show-scroll{
+    bottom: 3rem;
+}
+
+/* MEDIA QUERIES DISPOSITIVOS */
+
+/*LARGOS*/
+@media screen and (max-width: 992px) {
+    .scrollup{
+        right: 1.5rem;
+        padding: 0.25rem 0.4rem;
+    }
+    .scrollup-icon{
+        font-size: 1.25rem;
+    }
+ }
+ 
+ 
+ /*MEDIANOS*/
+ @media screen and (max-width: 768px) {
+    .show-scroll{
+        bottom:4rem ;
+    }
+ }
+ 
+ /*PEQUEÑOS*/
+ @media screen and (max-width: 350px) {
+   .scrollup{
+    right: 1rem;
+   }
+ }
